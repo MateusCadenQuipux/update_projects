@@ -1,4 +1,5 @@
 import json
+import sys
 
 with open("caminhos.json", "r") as jsonFile:
     data = json.load(jsonFile)
@@ -26,6 +27,6 @@ for projeto in data['projetos']:
 with open("caminhos.json", "w") as jsonFile:
     json.dump(data, jsonFile, indent=4)
 
-input("Caminhos atualizados! Pressione ENTER para fechar esta janela.");
+input("Caminhos atualizados! Pressione ENTER para fechar esta janela.")
 
-sys.exit();
+sys.exit()
