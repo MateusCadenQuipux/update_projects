@@ -1,0 +1,674 @@
+INFO:__main__:Started
+INFO:__main__:---------- Projeto: FrontOffice - Back----------
+
+INFO:__main__:Transversal - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/utilidades
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Conf - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/conf
+ * branch              development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Core - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-core-backend-qits2
+ * branch              development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Commons - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-commons-backend
+ * branch              Feature_Registrar_Etapa_Externa_Solicitud -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Alertas - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-alertas-frontoffice
+ * branch            development -> FETCH_HEAD
+   7d50340..748570d  development -> origin/development
+Updating 7d50340..748570d
+Fast-forward
+ .../impl/AlertaEnvioCorreoDaoImpl.java             |  80 ++--
+ .../impl/AlertaProcesoEnvioDaoImpl.java            |   1 -
+ .../impl/AlertaUsuarioEnvioDAOImpl.java            |   1 -
+ .../impl/NotificacionAlertaDaoImpl.java            |   1 -
+ .../impl/RegistroAlertaSD2DAOImpl.java             |   2 +-
+ .../impl/SyncUsuarioAlertaQxDaoImpl.java           |   2 +-
+ .../impl/AlertaDetalleManagerImpl.java             |   9 +-
+ .../impl/AlertaEnvioCorreoManagerImpl.java         |  29 +-
+ .../impl/AlertaProcesoEnvioManagerImpl.java        |   8 +-
+ .../impl/FirebaseNotificarPushManagerImpl.java     |  11 +-
+ .../manager/alertapush/impl/OneSignalClient.java   |   5 +-
+ .../impl/AlertaUsuarioEnvioManagerImpl.java        |   8 +-
+ .../alertas/manager/impl/AlertaManagerImpl.java    |  30 +-
+ .../manager/impl/AlertaUtilManagerImpl.java        |  25 +-
+ .../manager/impl/RegistroAlertaManagerImpl.java    |  59 +--
+ .../infraccion/impl/InfraccionManagerImpl.java     |   8 +-
+ .../impl/MaestroAlertaManagerImpl.java             |   8 +-
+ .../impl/MensajesAlertasManagerImpl.java           |  10 +-
+ .../impl/NotificacionAlertaManagerImpl.java        |  50 +--
+ .../impl/NotificacionCanalManagerImpl.java         |  15 +-
+ .../impl/NotificacionCorreoManagerImpl.java        |  15 +-
+ .../impl/NotificacionAlertaQontalkManagerImpl.java |  30 +-
+ .../panelalertas/impl/PanelAlertasManagerImpl.java |  19 +-
+ .../impl/RegistroAlertaQxManagerImpl.java          |   9 +-
+ .../impl/RegistroAlertaSd2ManagerImpl.java         |  22 +-
+ .../impl/RegistroAlertaSdManagerImpl.java          |  30 +-
+ .../impl/RegistroUsuarioTokenManagerImpl.java      |  15 +-
+ .../segundoenvio/impl/SegundoEnvioManagerImpl.java |   8 +-
+ .../impl/SyncUsuariosAlertasQxManagerImpl.java     |   8 +-
+ .../impl/SyncusuariosAlertasSdManagerImpl.java     |   8 +-
+ .../models/entity/TipoEstadoEnvioAlertaEntity.java |   1 -
+ .../plugins/alertas/services/AlertaService.java    |   8 +-
+ .../alertas/services/FirebaseMessagingService.java |  11 +-
+ .../alertas/services/PanelAlertasService.java      |  10 +-
+ .../alertas/services/RegistroAlertaService.java    |  19 +-
+ .../notificacionalerta/NotificarAlertaService.java |   8 +-
+ .../task/NotificacionAlertaQontalkTask.java        |   8 +-
+ .../impl/NotificacionAlertaTaskImpl.java           |  13 +-
+ .../impl/RegistroAlertaQxTaskImpl.java             |  19 +-
+ .../impl/RegistroAlertaSdTaskImpl.java             |  12 +-
+ .../impl/RegistroSegundoEnvioAlertaTaskImpl.java   |  22 +-
+ .../impl/SyncUsuarioAlertaQxTaskImpl.java          |  13 +-
+ .../quipux/plugins/alertas/util/AlertaQxUtils.java | 435 ++++++++++++---------
+ .../quipux/plugins/alertas/util/Constantes.java    |  20 +-
+ .../co/com/quipux/plugins/alertas/util/Util.java   |   3 +-
+ 45 files changed, 680 insertions(+), 448 deletions(-)
+
+
+INFO:__main__:Gestion atencion - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-gestion-atencion-backoffice
+ * branch                development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Integrador qxtransito - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-integrador-qxtransito
+ * branch              development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Login BDJWT - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-login-bdjwt
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Registro ciudadano Brasil - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-registro-ciudadano-brasil-backend
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Servicios digitales - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-servicios-digitales-backoffice-brasil
+ * branch              development -> FETCH_HEAD
+   4556069b..be68152c  development -> origin/development
+Updating 4556069b..be68152c
+Fast-forward
+ .../solicitar-preservicio/SolicitarPreservicControllerImpl.js      | 6 +++---
+ .../tramites/solicitar-preservicio/SolicitarPreservicValidator.js  | 7 ++++---
+ 2 files changed, 7 insertions(+), 6 deletions(-)
+
+
+INFO:__main__:Base back qits2 - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/base-back-qits2
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:---------- Projeto: FrontOffice - Front----------
+
+INFO:__main__:Plugin alertas - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-alertas-frontoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Plugin alertas frontoffice - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-alertas-frontoffice-frontend-brasil
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Plugin gestion atencion - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-gestion-atencion-frontoffice-frontend
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Plugin home shopping - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-home-shopping-frontoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Plugin login bdjwt - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-login-bdjwt
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Plugin login brasil - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-login-brasil-frontoffice-frontend
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Plugin registro ciudadano - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-registro-ciudadano-shopping-frontoffice-frontend
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Plugin solicitudes - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-solicitudes-frontoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Plugin solicitudes shopping - OK
+INFO:__main__:
+warning: redirecting to https://git.quipux.com/quipux/plugin-solicitudes-shopping-frontoffice-frontend.git/
+From https://git.quipux.com/quipux/plugin-solicitudes-shopping-frontoffice-frontend
+ * branch            development -> FETCH_HEAD
+   7f1b402..1d91677  development -> origin/development
+Updating 7f1b402..1d91677
+Fast-forward
+ .../carga-documentos-ci/CargaDocumentosCiControllerImpl.js         | 7 ++-----
+ .../procon/formulario-procon/FormularioProconControllerImpl.js     | 3 +--
+ 2 files changed, 3 insertions(+), 7 deletions(-)
+
+
+INFO:__main__:FrontOffice - Front - Gulp OK
+INFO:__main__:
+[08:02:06] Using gulpfile ~\Documents\Quipux\frontOfficeBrasil\fontes\base-frontoffice-front\implementacion\gulpfile.js
+[08:02:06] Starting 'dist'...
+[08:02:06] Starting 'clean'...
+[08:02:06] Finished 'clean' after 30 ms
+[08:02:06] Starting 'generate-plugins'...
+[
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/*.html',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/*Validator.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/*.css',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/*.html',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/*Validator.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/*.css',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/*.html',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/*.css',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/*.html',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/*.css',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/**/*.html',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/**/*.css',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/*.html',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/*.css',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/*.html',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/*.css',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/*.html',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/*.css',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/*.html',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/*.css',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*.html',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*.css',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/*.html',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/*.css',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/*.html',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/*.css',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/*.html',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/*.css',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/*.html',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/*.css',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*.html',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*.css',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/*.html',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/*.css',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/*.html',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/*.css',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/*.html',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/*.css',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/*.html',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/*.css',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/**/*.html',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/**/*.css',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/*.html',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/*.css',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/*.html',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/*.css',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/*.html',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/*.css',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/*.html',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/*.css',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/**/*.html',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/**/*.css',
+  ... 20 more items
+]
+[
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/*Validator.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/*Validator.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-home-shopping-frontoffice/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-solicitudes-shopping-frontoffice-frontend/solicitudes-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-registro-ciudadano-shopping-frontoffice-frontend/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-gestion-atencion-frontoffice-frontend/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-login-brasil-frontoffice-frontend/modulos/**/**/**/**/**/*Validator.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/*ControllerImpl.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/*Validator.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/**/*ControllerImpl.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/**/*Validator.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/**/**/*Validator.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/**/**/**/*Validator.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/**/**/**/**/*ControllerImpl.js',
+  'plugins/plugin-alertas-frontoffice-frontend-brasil//modulos/**/**/**/**/**/*Validator.js'
+]
+[08:02:08] gulplog v1 is deprecated. Please help your plugins update!
+[08:02:08] loginrjControllerImpl.js saved 3.82 KB (8.93 KB -> 5.11 KB)
+[08:02:08] sideBarLeftControllerImpl.js saved 1.68 KB (4.04 KB -> 2.36 KB)
+[08:02:08] tagManagerControllerImpl.js saved 359 B (733 B -> 374 B)
+[08:02:08] TopServiciosControllerImpl.js saved 321 B (936 B -> 615 B)
+[08:02:08] homePublicControllerImpl.js saved 3.05 KB (8.71 KB -> 5.66 KB)
+[08:02:08] AcercaDeControllerImpl.js saved 43 B (94 B -> 51 B)
+[08:02:08] MantenimientoControllerImpl.js saved 35 B (91 B -> 56 B)
+[08:02:08] ContactenosControllerImpl.js saved 45 B (137 B -> 92 B)
+[08:02:08] ErrorControllerImpl.js saved 35 B (83 B -> 48 B)
+[08:02:08] PuntosAtencionControllerImpl.js saved 4.14 KB (9.62 KB -> 5.48 KB)
+[08:02:08] PreguntasFrecuentesControllerImpl.js saved 64 B (188 B -> 124 B)
+[08:02:08] homePublicValidator.js saved 312 B (593 B -> 281 B)
+[08:02:08] ConsultaSegInconsControllerImpl.js saved 5.04 KB (11.36 KB -> 6.33 KB)
+[08:02:08] FormularioRenachInconsistenciasControllerImpl.js saved 6.99 KB (15.82 KB -> 8.83 KB)
+[08:02:08] EscolasExtintasInconsistenciasControllerImpl.js saved 12.52 KB (24.38 KB -> 11.86 KB)
+[08:02:08] FormularioProconInconsistenciasControllerImpl.js saved 9.73 KB (21.68 KB -> 11.96 KB)
+[08:02:08] MinhaCasaInConsistenciasControllerImpl.js saved 23.96 KB (58.64 KB -> 34.68 KB)
+[08:02:08] EscolasExtintasControllerImpl.js saved 26 KB (49.41 KB -> 23.4 KB)
+[08:02:08] ConsultaSeguroControllerImpl.js saved 8.84 KB (19.93 KB -> 11.09 KB)
+[08:02:08] CargaDocumentosGenericoControllerImpl.js saved 2.73 KB (6.32 KB -> 3.58 KB)
+[08:02:09] FormularioRenachControllerImpl.js saved 10.6 KB (23.62 KB -> 13.01 KB)
+[08:02:09] CargaDocumentosControllerImpl.js saved 2.12 KB (5.39 KB -> 3.27 KB)
+[08:02:09] EfectuarCadastroControllerImpl.js saved 33.5 KB (80.32 KB -> 46.82 KB)
+[08:02:09] CorregirInconsistenciasControllerImpl.js saved 672 B (1.5 KB -> 867 B)
+[08:02:09] CorregirInconsistenciasBaseControllerImpl.js saved 2 KB (4.54 KB -> 2.54 KB)
+[08:02:09] SolicitudExitosaControllerImpl.js saved 249 B (713 B -> 464 B)
+[08:02:09] CargaDocumentosCiControllerImpl.js saved 2.67 KB (6.63 KB -> 3.96 KB)
+[08:02:09] SolicitudRechazadaControllerImpl.js saved 722 B (1.58 KB -> 895 B)
+[08:02:09] FormularioProconControllerImpl.js saved 15.69 KB (32.93 KB -> 17.25 KB)
+[08:02:09] ModalDireccionControllerImpl.js saved 4.01 KB (9.24 KB -> 5.23 KB)
+[08:02:09] SolicitudExitosaGenericaControllerImpl.js saved 253 B (725 B -> 472 B)
+[08:02:09] SolicitudExitosaCiControllerImpl.js saved 1.03 KB (2.06 KB -> 1.03 KB)
+[08:02:09] EfectuarCadastroValidator.js saved 669 B (1.88 KB -> 1.22 KB)
+[08:02:09] MinhaCasaInConsistenciasValidator.js saved 881 B (2.1 KB -> 1.24 KB)
+[08:02:09] registroCiudadanoControllerImpl.js saved 18.35 KB (28.31 KB -> 9.96 KB)
+[08:02:09] DireccionBrasilControllerImpl.js saved 5.37 KB (11.92 KB -> 6.56 KB)
+[08:02:09] activarCuentaControllerImpl.js saved 452 B (1.24 KB -> 813 B)
+[08:02:09] cambioExitosoControllerImpl.js saved 43 B (99 B -> 56 B)
+[08:02:09] cambiarContrasenaControllerImpl.js saved 936 B (2.89 KB -> 1.97 KB)
+[08:02:09] miPerfilControllerImpl.js saved 12.34 KB (33.86 KB -> 21.53 KB)
+[08:02:09] layoutRegistroControllerImpl.js saved 600 B (1.48 KB -> 914 B)
+[08:02:09] recuperarContrasenaControllerImpl.js saved 1.62 KB (3.81 KB -> 2.19 KB)
+[08:02:09] registroCiudadanoValidator.js saved 1.49 KB (3.48 KB -> 2 KB)
+[08:02:09] DireccionBrasilValidator.js saved 750 B (1.31 KB -> 594 B)
+[08:02:09] cambiarContrasenaValidator.js saved 763 B (1.74 KB -> 1020 B)
+[08:02:09] miPerfilValidator.js saved 2.16 KB (4.33 KB -> 2.17 KB)
+[08:02:09] recuperarContrasenaValidator.js saved 288 B (651 B -> 363 B)
+[08:02:09] DescargarAppControllerImpl.js saved 1.02 KB (2.41 KB -> 1.4 KB)
+[08:02:09] SolicitarCitaControllerImpl.js saved 18.42 KB (44.4 KB -> 25.98 KB)
+[08:02:09] ConsultarHistorialControllerImpl.js saved 1.63 KB (4.11 KB -> 2.48 KB)
+[08:02:09] ConsultarCitasControllerImpl.js saved 4.59 KB (14.88 KB -> 10.29 KB)
+[08:02:09] CitaAgendadaControllerImpl.js saved 3.78 KB (9.77 KB -> 5.99 KB)
+[08:02:09] sessionControllerImpl.js saved 15.7 KB (28.03 KB -> 12.33 KB)
+[08:02:09] loginValidator.js saved 762 B (1.52 KB -> 793 B)
+[08:02:09] AlertasControllerImpl.js saved 4.46 KB (10.19 KB -> 5.73 KB)
+[08:02:09] AlertasInformativasControllerImpl.js saved 1.02 KB (2.51 KB -> 1.49 KB)
+[08:02:09] Finished 'generate-plugins' after 3.31 s
+[08:02:09] Starting 'vendors_aux'...
+[08:02:09] Finished 'vendors_aux' after 31 ms
+[08:02:09] Starting 'vendors'...
+[08:02:09] Finished 'vendors' after 28 ms
+[08:02:09] Starting 'core'...
+[08:02:09] Finished 'core' after 6.46 ms
+[08:02:09] Starting 'app'...
+[08:02:09] Finished 'app' after 8.21 ms
+[08:02:09] Starting 'imports'...
+[08:02:09] Finished 'imports' after 5.85 ms
+[08:02:09] Starting 'uglify-files'...
+[08:02:10] app.js saved 16.14 KB (28.72 KB -> 12.57 KB)
+[08:02:10] core.js saved 23.41 KB (45.92 KB -> 22.51 KB)
+[08:02:10] imports.js saved 74 B (683 B -> 609 B)
+[08:02:15] vendors.js saved 1.15 MB (3.32 MB -> 2.17 MB)
+[08:02:16] vendors_aux.js saved 43.74 KB (298.36 KB -> 254.63 KB)
+[[90m08:02:16[39m] Plumber found unhandled error:
+ TypeError: Cannot read properties of undefined (reading 'type')
+[08:02:16] Finished 'uglify-files' after 6.83 s
+[08:02:16] Finished 'dist' after 10 s
+
+
+INFO:__main__:---------- Projeto: BO - Back----------
+
+INFO:__main__:Transversal - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/utilidades
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Conf - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/conf
+ * branch              development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Core - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-core-backend-qits2
+ * branch              development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Commons - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-commons-backend
+ * branch              Feature_Registrar_Etapa_Externa_Solicitud -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Login - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-login-backoffice
+ * branch            development -> FETCH_HEAD
+   c3a88ca..551d376  development -> origin/development
+Updating c3a88ca..551d376
+Fast-forward
+ .../src/main/java/mensajes_login-fr.properties     |  12 +++
+ .../i18n/messages/message_fr.json                  | 102 +++++++++++++++++++++
+ 2 files changed, 114 insertions(+)
+ create mode 100644 login-backoffice-backend/src/main/java/mensajes_login-fr.properties
+ create mode 100644 login-backoffice-frontend/i18n/messages/message_fr.json
+
+
+INFO:__main__:Integrador qxtransito - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-integrador-qxtransito
+ * branch              development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Administracion seguridad - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-administracion-seguridad-backoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Turnos - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-visualizacion-atencion-backoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Gestion atencion - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-gestion-atencion-backoffice
+ * branch                development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Common SSDD - OK
+INFO:__main__:
+warning: redirecting to https://git.quipux.com/quipux/plugin-common-ssdd-backoffice.git/
+From https://git.quipux.com/quipux/plugin-common-ssdd-backoffice
+ * branch              brasil     -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Servicios digitales - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-servicios-digitales-backoffice-brasil
+ * branch              development -> FETCH_HEAD
+   4556069b..be68152c  development -> origin/development
+Updating 4556069b..be68152c
+Fast-forward
+ .../solicitar-preservicio/SolicitarPreservicControllerImpl.js      | 6 +++---
+ .../tramites/solicitar-preservicio/SolicitarPreservicValidator.js  | 7 ++++---
+ 2 files changed, 7 insertions(+), 6 deletions(-)
+
+
+INFO:__main__:Gestor servicio Brasil - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-gestor-servicio-brasil-backoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Registro ciudadano Brasil - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-registro-ciudadano-brasil-backend
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Base back qits2 - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/base-back-qits2
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:---------- Projeto: BO - Front----------
+
+INFO:__main__:Administracion seguridad - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-administracion-seguridad-backoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Common SSDD - OK
+INFO:__main__:
+warning: redirecting to https://git.quipux.com/quipux/plugin-common-ssdd-backoffice.git/
+From https://git.quipux.com/quipux/plugin-common-ssdd-backoffice
+ * branch              brasil     -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Commons backend - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-commons-backend
+ * branch              Feature_Registrar_Etapa_Externa_Solicitud -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Gestion atencion - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-gestion-atencion-backoffice
+ * branch                development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Gestor servicio Brasil - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-gestor-servicio-brasil-backoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Integrador qxtransito - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-integrador-qxtransito
+ * branch              development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Login backoffice - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-login-backoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Registro ciudadano Brasil - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-registro-ciudadano-brasil-backend
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Servicios digitales - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-servicios-digitales-backoffice-brasil
+ * branch              development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:Turnos - OK
+INFO:__main__:
+From https://git.quipux.com/quipux/plugin-visualizacion-atencion-backoffice
+ * branch            development -> FETCH_HEAD
+Already up to date.
+
+
+INFO:__main__:BO - Front - Gulp OK
+INFO:__main__:
+[08:03:16] Using gulpfile ~\Documents\Quipux\GA\fontes\base-backoffice-front\implementacion\gulpfile.js
+[08:03:16] Starting 'dist'...
+[08:03:16] Starting 'generate-plugins'...
+[]
+[08:03:21] Finished 'generate-plugins' after 4.4 s
+[08:03:21] Starting 'vendors_aux'...
+[08:03:23] Finished 'vendors_aux' after 2.53 s
+[08:03:23] Starting 'vendors'...
+[08:03:24] Finished 'vendors' after 266 ms
+[08:03:24] Starting 'core'...
+[08:03:24] Finished 'core' after 516 ms
+[08:03:24] Starting 'app'...
+[08:03:24] Finished 'app' after 21 ms
+[08:03:24] Starting 'imports'...
+[08:03:25] Finished 'imports' after 604 ms
+[08:03:25] Starting 'states'...
+[08:03:25] Finished 'states' after 6.6 ms
+[08:03:25] Starting 'uglify-files'...
+Successfully wrote file
+[08:03:27] gulplog v1 is deprecated. Please help your plugins update!
+[08:03:27] app.js saved 1.23 MB (1.61 MB -> 395.39 KB)
+[08:03:28] core.js saved 1.23 MB (1.61 MB -> 395.39 KB)
+[08:03:28] imports.js saved 3.19 KB (13.8 KB -> 10.62 KB)
+[08:03:30] vendors.js saved 68.09 KB (594.34 KB -> 526.25 KB)
+[08:03:44] vendors_aux.js saved 695.79 KB (5.59 MB -> 4.91 MB)
+[08:03:46] plugins.js saved 179.3 KB (1.13 MB -> 981.5 KB)
+[08:03:46] Finished 'uglify-files' after 21 s
+[08:03:46] Finished 'dist' after 30 s
+
+
