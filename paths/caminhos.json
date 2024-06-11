@@ -37,7 +37,7 @@
                     "nome": "Alertas",
                     "caminho_base": "/plugin-alertas-frontoffice/alertas-backend",
                     "caminho": "C:/Users/Quipux/Documents/Quipux/frontOfficeBrasil/fontes/base-frontoffice-front/implementacion/plugins/plugin-alertas-frontoffice/alertas-backend",
-                    "branch": "development"
+                    "branch": "brasil"
                 },
                 {
                     "nome": "Gestion atencion",

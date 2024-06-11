@@ -5,10 +5,6 @@ import sys
 import json
 import datetime
 
-# logger = logging.getLogger(__name__)
-# logging.basicConfig(filename='log_git_pull.log', level=logging.INFO, filemode="w")
-# logger.info('Started')
-
 with open("../paths/caminhos.json", "r") as jsonFile:
     data = json.load(jsonFile)
 
