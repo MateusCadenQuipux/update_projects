@@ -4,7 +4,7 @@
 Um atualizador para os projetos do GA , realizando git pull de todos os projetos e gerando os seus JARs.7
 
 # Avisos
-11/06/2024 - 09:19 -- O projeto de alertas está com problema de circular reference. Por enquanto, utilizaremos a branch brasil, que está com uma versão anterior sem este problema.
+11/06/2024 - 09:19 - Mateus Caden -- O projeto de alertas está com problema de circular reference. Por enquanto, utilizaremos a branch brasil, que está com uma versão anterior sem este problema.
 
 # Como utilizar
 1. Mudar os caminhos em pathscaminhos.json para os caminhos da sua máquina. Caso um projeto seu esteja dentro do basexxxx-frontimplementacionplugins, adicione o nome do serviço dentro dos plugins do projeto. Caso contrário, remova-o.
