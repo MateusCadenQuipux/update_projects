@@ -11,7 +11,7 @@ Um atualizador para os projetos do GA , realizando git pull de todos os projetos
 2. Após qualquer mudança do arquivo /paths/caminhos.json, rode o arquivo /paths/update-caminhos.py.
 3. Com os caminhos configurados, rode o /updates/git_pull.py para realizar o git pull de todos os projetos, além de um gulp dist daqueles que sejam frontend. Lembre-se de ter acesso a estes projetos no git e ter a VPN da colombia conectada.
 4. Rode o /updates/clean_install.py para gerar o JAR de todos os projetos **(Em desenvolvimento)**
-5. Verifique os logs das operações acima dentro de logs.
+5. Verifique os logs das operações acima dentro de /logs.
 
 ## Observações
 Não é necessário rodar ambos git pull e clean install, basta utilizar aqueles que sejam necessários para você no momento!
