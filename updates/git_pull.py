@@ -26,7 +26,7 @@ with open("../logs/log_git_pull.log", "w") as log_file:
             except subprocess.CalledProcessError as e:
                 print("\033[91m" + servico['nome'] + " - ERROR! (" + str(index + 1) + "/" + str(len(projeto['servicos'])) + ")" + "\033[0m")
                 if "fatal: unable to access" in e.output:
-                    print("\033[91m" + "Sem acesso ao repositório, verificar VPN!" + "\033[0m")
+                    print("\033[91m" + "Sem acesso ao repositório, verificar se você possui acesso a este projeto ou se está conectado na VPN!" + "\033[0m")
                 log_file.write(servico['nome'] + " - ERROR")
                 log_file.write("\n" + e.output)
         # gulp dist
