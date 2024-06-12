@@ -1,6 +1,5 @@
 import os
 import subprocess
-import logging
 import sys
 import json
 import datetime
@@ -25,9 +24,9 @@ with open("../logs/log_git_pull.log", "w") as log_file:
                 print(servico['nome'] + " - OK (" + str(index + 1) + "/" + str(len(projeto['servicos'])) + ")")
                 log_file.write("\n" + saida_log + "\n")
             except subprocess.CalledProcessError as e:
-                print(servico['nome'] + " - ERROR! (" + str(index + 1) + "/" + str(len(projeto['servicos'])) + ")")
+                print("\033[91m" + servico['nome'] + " - ERROR! (" + str(index + 1) + "/" + str(len(projeto['servicos'])) + ")" + "\033[0m")
                 if "fatal: unable to access" in e.output:
-                    print("Sem acesso ao repositório, verificar VPN!")
+                    print("\033[91m" + "Sem acesso ao repositório, verificar VPN!" + "\033[0m")
                 log_file.write(servico['nome'] + " - ERROR")
                 log_file.write("\n" + e.output)
         # gulp dist
@@ -40,7 +39,7 @@ with open("../logs/log_git_pull.log", "w") as log_file:
                 log_file.write("\n" + saida_log + "\n")
                 log_file.write("********************************************************************************\n")
             except subprocess.CalledProcessError as e:
-                print(projeto['nome'] + " - Gulp ERROR!")
+                print("\033[91m" + projeto['nome'] + " - Gulp ERROR!" + "\033[0m")
                 log_file.write("**************************************** " + projeto['nome'] + " - Gulp ERROR ****************************************")
                 log_file.write("\n" + e.output)
                 log_file.write("********************************************************************************\n")
@@ -48,4 +47,4 @@ with open("../logs/log_git_pull.log", "w") as log_file:
 
 
 input("Projetos atualizados! Pressione Enter para fechar esta janela. ")
-sys.exit();
+sys.exit()
