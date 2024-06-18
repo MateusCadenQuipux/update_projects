@@ -4,6 +4,7 @@
 Um atualizador para os projetos do GA , realizando git pull de todos os projetos e gerando os seus JARs.7
 
 ## Avisos
+18/06/2024 - 16:37 - Mateus Caden -- O projeto de alertas voltou para a branch development!
 11/06/2024 - 09:19 - Mateus Caden -- O projeto de alertas está com problema de circular reference. Por enquanto, utilizaremos a branch brasil, que está com uma versão anterior sem este problema.
 
 ## Como utilizar
