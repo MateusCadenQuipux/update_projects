@@ -1,5 +1,6 @@
 import json
 import sys
+import os
 
 with open("caminhos.json", "r") as jsonFile:
     data = json.load(jsonFile)
@@ -18,6 +19,8 @@ for projeto in data['projetos']:
                 servico['caminho'] = data['base_url'] + data['bo'] + data['bo_front'] + data['plugins'] + servico['caminho_base']
             else:
                 servico['caminho'] = data['base_url'] + data['bo'] + servico['caminho_base']
+        if not os.path.isdir(servico['caminho']):
+            print("\033[91mError - Caminho não existente no servico: " + projeto['nome'] + " | " + servico['nome'] + "\033[0m")
     if "caminhoGulp" in projeto:
         if "FrontOffice" in projeto['nome']:
             projeto['caminhoGulp'] = data['base_url'] + data['frontoffice'] + data['frontoffice_front']

@@ -1,4 +1,7 @@
 {
+	// base_url -> caminho ate as pastas do BO e FrontOffice
+	// bo -> caminhos entre base_url e a pasta com os projetos do bo
+	// frontoffice -> caminho entre base_url e a pasta com os projetos do frontoffice
     "base_url": "C:/Users/Quipux/Documents/Quipux",
     "bo": "/GA/fontes",
     "frontoffice": "/frontOfficeBrasil/fontes",
@@ -37,7 +40,7 @@
                     "nome": "Alertas",
                     "caminho_base": "/plugin-alertas-frontoffice/alertas-backend",
                     "caminho": "C:/Users/Quipux/Documents/Quipux/frontOfficeBrasil/fontes/base-frontoffice-front/implementacion/plugins/plugin-alertas-frontoffice/alertas-backend",
-                    "branch": "brasil"
+                    "branch": "development"
                 },
                 {
                     "nome": "Gestion atencion",

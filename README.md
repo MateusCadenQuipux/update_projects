@@ -16,3 +16,8 @@ Um atualizador para os projetos do GA , realizando git pull de todos os projetos
 ## Observações
 Não é necessário rodar ambos git pull e clean install, basta utilizar aqueles que sejam necessários para você no momento!
 
+Legendas para as urls dentro do /paths/caminhos.json
+	1. base_url -> caminho ate as pastas do BO e FrontOffice
+	2. bo -> caminhos entre base_url e a pasta com os projetos do bo
+	3. frontoffice -> caminho entre base_url e a pasta com os projetos do frontoffice
+
