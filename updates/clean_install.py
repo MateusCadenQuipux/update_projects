@@ -27,7 +27,7 @@ with open("../logs/log_clean_install.log", "w") as log_file:
                 print(servico['nome'] + " - OK (" + str(index + 1) + "/" + str(len(projeto['servicos'])) + ")")
                 log_file.write("\n" + saida_log + "\n")
             except subprocess.CalledProcessError as e:
-                print(servico['nome'] + " - ERROR! (" + str(index + 1) + "/" + str(len(projeto['servicos'])) + ")")
+                print("\033[91m" + servico['nome'] + " - ERROR! (" + str(index + 1) + "/" + str(len(projeto['servicos'])) + ")" + "\033[0m")
                 log_file.write(servico['nome'] + " - ERROR")
                 log_file.write("\n" + e.output)
 
