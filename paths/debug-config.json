@@ -1,0 +1,79 @@
+{
+	"configs": [
+		{
+			"debug_config": "01 -" ,
+			"mvn_update": "transversal"
+		},
+		{
+			"debug_config": "02 -" ,
+			"mvn_update": "conf"
+		},
+		{
+			"debug_config": "03 -" ,
+			"mvn_update": "core"
+		},
+		{
+			"debug_config": "04 -" ,
+			"mvn_update": "commons"
+		},
+		{
+			"debug_config": "05 -" ,
+			"mvn_update": "login-backoffice"
+		},
+		{
+			"debug_config": "06 -" ,
+			"mvn_update": "integrador-qxtransito"
+		},
+		{
+			"debug_config": "07 -" ,
+			"mvn_update": "plugin-administracion-seguridad"
+		},
+		{
+			"debug_config": "08 -" ,
+			"mvn_update": "visualizacion-atencion"
+		},
+		{
+			"debug_config": "09 -" ,
+			"mvn_update": "gestion-atencion"
+		},
+		{
+			"debug_config": "10 -" ,
+			"mvn_update": "plugin-common-ssdd-backoffice"
+		},
+		{
+			"debug_config": "11 -" ,
+			"mvn_update": "serviciosdigitalesbackoffice"
+		},
+		{
+			"debug_config": "12 -" ,
+			"mvn_update": "gestor-servicio-brasil"
+		},
+		{
+			"debug_config": "13 -" ,
+			"mvn_update": "registrociudadanobrasil"
+		},
+		{
+			"debug_config": "basebackqits2parent" ,
+			"mvn_update": "basebackqits2parent"
+		},
+		{
+			"debug_config": "main"
+		}
+	],
+	"possiveis_mvn": [
+		"basebackqits2parent",
+		"commons",
+		"conf",
+		"core",
+		"gestion-atencion",
+		"gestor-servicio-brasil",
+		"integrador-qxtransito",
+		"login-backoffice",
+		"plugin-administracion-seguridad",
+		"plugin-common-ssdd-backoffice",
+		"registrociudadanobrasil",
+		"serviciosdigitalesbackoffice",
+		"transversal",
+		"visualizacion-atencion"
+	]
+}
