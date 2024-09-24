@@ -29,20 +29,30 @@ def run_mvn(mvns, possiveis_mvn):
         old_index = index_atual
     autoit.control_click("Update Maven Project", "Button12")
     time.sleep(1)
-    autoit.control_focus(janela_original, "Edit2")
-    autoit.control_send(janela_original, "Edit2", "Progress")
+    autoit.send("^3")
+    autoit.send("Progress")
     time.sleep(0.2)
     autoit.send("{ENTER}")
-    texto_progresso = autoit.control_get_text(janela_original, "Static5")
-    break_count = 0
-    while texto_progresso != "Building workspace (Sleeping)":
+
+    time.sleep(1)
+    window_handle = autoit.win_get_handle(janela_original)
+    saida = False
+    while True:
         try:
-            time.sleep(0.2)
-            texto_progresso = autoit.control_get_text(janela_original, "Static5")
-            break_count = 0
+            time.sleep(0.25)
+            handle_update = autoit.control_get_handle(window_handle, "[TEXT:Updating Maven Project]")
+            saida = True
         except:
-            break_count += 1
-            if break_count == 10:
+            break
+
+    saida = False
+    while True:
+        try:
+            time.sleep(0.25)
+            handle_update = autoit.control_get_handle(window_handle, "[TEXT:Building workspace]")
+            saida = True
+        except:
+            if saida:
                 break
 
 
@@ -84,8 +94,8 @@ mvns.sort()
 run_mvn(mvns, possiveis_mvn)
 
 # Rodando as debug configs
-autoit.control_focus(janela_original, "Edit2")
-autoit.control_send(janela_original, "Edit2", "Console")
+autoit.send("^3")
+autoit.send("Console")
 time.sleep(0.2)
 autoit.send("{ENTER}")
 debug_configs = list(map(map_debug, configs))
